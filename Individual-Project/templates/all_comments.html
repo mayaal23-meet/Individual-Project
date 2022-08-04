@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<title>all comments</title>
+</head>
+<body>
+	<div class="topnav">
+		<br><br><br>
+		<h1 class="middle">see comments!</h1>
+		<p class="middle">do it yourself but with us!</p>
+		<br><br><br><br><br>
+		<a href="/home">Home</a>
+		<a href="/share">share with us</a>
+		<a href="/upload">upload original DIY</a>
+		<a class="active" href="/comments">comments</a>
+		<a href="/signin">switch account</a>
+	</div>
+	<br><br><br>
+	<h2> comments from users:</h2>
+
+	{% for i in comments%}
+	{{comments[i]['title']}}
+	<br>
+	{{comments[i]['comment']}}
+	{%endfor%}
+	<br>
+	
+	<br><br><br>
+	<h2>users projects:</h2>
+
+	{% for i in explanations%}
+	{{explanations[i]['title']}}
+	<br>
+	{{explanations[i]['explanation']}}
+	{%endfor%}
+	<br>
+</body>
+</html>

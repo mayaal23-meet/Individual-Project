@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<title>share</title>
+
+
+</head>
+<body>
+	<div class="topnav">
+		<br><br><br>
+		<h1 class="middle">share with us your thoughts</h1>
+		<p class="middle">do it yourself but with us!</p>
+		<br><br><br><br><br>
+		<a href="/home">Home</a>
+		<a class="active" href="/share">share with us</a>
+		<a href="/upload">upload original DIY</a>
+		<a href="/comments">comments</a>
+		<a href="/signin">switch account</a>
+	</div>
+	<br><br><br>
+
+
+	<form method="POST" action="/share">
+    	<div>
+    		<h4 class="middle"> comments about the tutorials from the website!</h4>
+    		<br><br>
+    		<label>name of the tutorial:*</label>
+            	<div>
+                	<input type="title"  name="title" maxlength="280">
+           		</div>
+        </div>
+        <div>
+    		<label> what did you think about it?*</label>
+            	<div>
+                	<input type="comment"  name="comment" maxlength="280">
+           		</div>
+        </div>
+        <br>
+        
+        <input type="submit" value="submit">
+    </form>
+
+
+</body>
+</html>
